@@ -1,0 +1,53 @@
+{
+    "registration": [ {
+                     "label"        :"First Name",
+                     "placeholder"  :"Enter your first name.",
+                     "index"        :"101"
+                     },
+                     {
+                     "label"        :"Last Name",
+                     "placeholder"  :"Enter your last name.",
+                     "index"        :"102"
+                     },
+                     {
+                     "label"        :"Gender",
+                     "placeholder"  :"Select your gender name.",
+                     "index"        :"103"
+                     },
+                     {
+                     "label"        :"Contact Number",
+                     "placeholder"  :"Enter your first name.",
+                     "index"        :"104"
+                     },
+                     {
+                     "label"        :"Address Line1",
+                     "placeholder"  :"Enter your permanent address.",
+                     "index"        :"105"
+                     },
+                     {
+                     "label"        :"Address Line2",
+                     "placeholder"  :"Enter your address.",
+                     "index"        :"106"
+                     },
+                     {
+                     "label"        :"Country",
+                     "placeholder"  :"Select your country.",
+                     "index"        :"107"
+                     },
+                     {
+                     "label"        :"State",
+                     "placeholder"  :"Select your state.",
+                     "index"        :"108"
+                     },
+                     {
+                     "label"        :"City",
+                     "placeholder"  :"Select your city.",
+                     "index"        :"109"
+                     },
+                     {
+                     "label"        :"Pincode",
+                     "placeholder"  :"Enter your pin code.",
+                     "index"        :"110"
+                     }
+    ]
+}
