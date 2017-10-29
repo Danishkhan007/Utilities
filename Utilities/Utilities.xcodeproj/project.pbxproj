@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C1593971FA6241C00E4771E /* RegistrationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1593961FA6241C00E4771E /* RegistrationViewModel.m */; };
+		1C15939A1FA6261300E4771E /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1593991FA6261300E4771E /* IndexViewController.m */; };
 		1CD8F97F1FA350E900B96F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8F9791FA350E900B96F8E /* AppDelegate.m */; };
 		1CD8F9891FA350F500B96F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8F9831FA350F500B96F8E /* Assets.xcassets */; };
 		1CD8F98A1FA350F500B96F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8F9851FA350F500B96F8E /* LaunchScreen.storyboard */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		1C1593951FA6241C00E4771E /* RegistrationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewModel.h; sourceTree = "<group>"; };
 		1C1593961FA6241C00E4771E /* RegistrationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewModel.m; sourceTree = "<group>"; };
+		1C1593981FA6261300E4771E /* IndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		1C1593991FA6261300E4771E /* IndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
 		1CD8F9781FA350E900B96F8E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CD8F9791FA350E900B96F8E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1CD8F9831FA350F500B96F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 			children = (
 				1CD8F9901FA3617100B96F8E /* RegistrationStyle1ViewController.h */,
 				1CD8F9911FA3617100B96F8E /* RegistrationStyle1ViewController.m */,
+				1C1593981FA6261300E4771E /* IndexViewController.h */,
+				1C1593991FA6261300E4771E /* IndexViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CD8F99B1FA5A64B00B96F8E /* RegistrationModel.m in Sources */,
+				1C15939A1FA6261300E4771E /* IndexViewController.m in Sources */,
 				1CD8F97F1FA350E900B96F8E /* AppDelegate.m in Sources */,
 				1C1593971FA6241C00E4771E /* RegistrationViewModel.m in Sources */,
 				1CDD46061FA0B12800D29679 /* main.m in Sources */,

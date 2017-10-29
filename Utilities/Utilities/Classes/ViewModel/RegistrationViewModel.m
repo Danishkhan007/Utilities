@@ -10,6 +10,7 @@
 
 @implementation RegistrationViewModel
 
+//To fetch display data from json file. 
 + (NSArray*)getRegistrationUIDetails {
     NSArray* itemsArray;
     NSString* filePath = [[NSBundle mainBundle] pathForResource:@"Registration" ofType:@"json"];

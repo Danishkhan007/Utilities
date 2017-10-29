@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4zP-rI-FRt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I8Y-oM-dX8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,25 +10,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--INDEX-->
         <scene sceneID="gvV-kW-av4">
             <objects>
-                <viewController id="4zP-rI-FRt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="X60-St-Rcz">
+                <viewController id="4zP-rI-FRt" customClass="IndexViewController" sceneMemberID="viewController">
+                    <view key="view" alpha="0.75" contentMode="scaleToFill" id="X60-St-Rcz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWh-HH-Bqh">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kC5-l3-CFR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Registration">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registrationBtnPressed:" destination="4zP-rI-FRt" eventType="touchUpInside" id="C2y-OX-EZx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22271813716659791" green="0.065222305476953471" blue="0.39052585659898476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DWh-HH-Bqh" firstAttribute="leading" secondItem="hNc-Rq-caD" secondAttribute="leading" constant="16" id="2Yn-Fz-W0t"/>
+                            <constraint firstItem="hNc-Rq-caD" firstAttribute="trailing" secondItem="DWh-HH-Bqh" secondAttribute="trailing" constant="16" id="Ovl-LT-OEb"/>
+                            <constraint firstItem="hNc-Rq-caD" firstAttribute="bottom" secondItem="DWh-HH-Bqh" secondAttribute="bottom" constant="20" id="xNs-bs-VIU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hNc-Rq-caD"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INDEX" id="yKf-kQ-L5g">
+                        <barButtonItem key="backBarButtonItem" title="  " id="JCM-0a-L18"/>
+                    </navigationItem>
                     <connections>
-                        <segue destination="9fB-yj-ubY" kind="show" id="NNP-JI-oId"/>
+                        <segue destination="9fB-yj-ubY" kind="show" identifier="ShowRegistration" id="NNP-JI-oId"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nla-Oh-GdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-382" y="-37"/>
+            <point key="canvasLocation" x="-44" y="-37.331334332833585"/>
         </scene>
-        <!--Registration Style1 View Controller-->
+        <!--REGISTRATION-->
         <scene sceneID="Psf-0d-ONp">
             <objects>
                 <viewController id="9fB-yj-ubY" customClass="RegistrationStyle1ViewController" sceneMemberID="viewController">
@@ -98,13 +121,39 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LfX-L8-VwM"/>
                     </view>
+                    <navigationItem key="navigationItem" title="REGISTRATION" id="D75-yY-bj0">
+                        <barButtonItem key="backBarButtonItem" title="  " id="D8v-Rf-47a">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="_tableview" destination="xnb-Gy-MSU" id="8RE-71-JaQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lE-R2-2wp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334" y="-37"/>
+            <point key="canvasLocation" x="672.79999999999995" y="-37.331334332833585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tVL-u0-NSj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I8Y-oM-dX8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C8T-QB-lgu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4zP-rI-FRt" kind="relationship" relationship="rootViewController" id="43C-Bb-zFf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFz-d6-Mev" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791" y="-37"/>
         </scene>
     </scenes>
 </document>
