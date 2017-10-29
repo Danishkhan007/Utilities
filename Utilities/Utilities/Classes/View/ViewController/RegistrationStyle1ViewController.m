@@ -7,7 +7,7 @@
 //
 
 #import "RegistrationStyle1ViewController.h"
-#import "RegistrationManager.h"
+#import "RegistrationViewModel.h"
 #import "TextWithLabelCell.h"
 
 @interface RegistrationStyle1ViewController () <UITableViewDelegate> {
@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _uiDetailsArray = [RegistrationManager getRegistrationUIDetails];
+    _uiDetailsArray = [RegistrationViewModel getRegistrationUIDetails];
 }
 
 - (void)didReceiveMemoryWarning {

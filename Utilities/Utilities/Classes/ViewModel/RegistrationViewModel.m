@@ -6,9 +6,9 @@
 //  Copyright © 2017 Danish Khan. All rights reserved.
 //
 
-#import "RegistrationManager.h"
+#import "RegistrationViewModel.h"
 
-@implementation RegistrationManager
+@implementation RegistrationViewModel
 
 + (NSArray*)getRegistrationUIDetails {
     NSArray* itemsArray;

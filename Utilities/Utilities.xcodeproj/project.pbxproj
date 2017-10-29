@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C3170791FA5BB8700A95598 /* RegistrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3170781FA5BB8700A95598 /* RegistrationManager.m */; };
+		1C1593971FA6241C00E4771E /* RegistrationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1593961FA6241C00E4771E /* RegistrationViewModel.m */; };
 		1CD8F97F1FA350E900B96F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8F9791FA350E900B96F8E /* AppDelegate.m */; };
 		1CD8F9891FA350F500B96F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8F9831FA350F500B96F8E /* Assets.xcassets */; };
 		1CD8F98A1FA350F500B96F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8F9851FA350F500B96F8E /* LaunchScreen.storyboard */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C3170771FA5BB8700A95598 /* RegistrationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationManager.h; sourceTree = "<group>"; };
-		1C3170781FA5BB8700A95598 /* RegistrationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistrationManager.m; sourceTree = "<group>"; };
+		1C1593951FA6241C00E4771E /* RegistrationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewModel.h; sourceTree = "<group>"; };
+		1C1593961FA6241C00E4771E /* RegistrationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewModel.m; sourceTree = "<group>"; };
 		1CD8F9781FA350E900B96F8E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CD8F9791FA350E900B96F8E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1CD8F9831FA350F500B96F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		1CD8F97E1FA350E900B96F8E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1C3170771FA5BB8700A95598 /* RegistrationManager.h */,
-				1C3170781FA5BB8700A95598 /* RegistrationManager.m */,
+				1C1593951FA6241C00E4771E /* RegistrationViewModel.h */,
+				1C1593961FA6241C00E4771E /* RegistrationViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 				TargetAttributes = {
 					1CDD45F21FA0B12800D29679 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -243,7 +243,7 @@
 			files = (
 				1CD8F99B1FA5A64B00B96F8E /* RegistrationModel.m in Sources */,
 				1CD8F97F1FA350E900B96F8E /* AppDelegate.m in Sources */,
-				1C3170791FA5BB8700A95598 /* RegistrationManager.m in Sources */,
+				1C1593971FA6241C00E4771E /* RegistrationViewModel.m in Sources */,
 				1CDD46061FA0B12800D29679 /* main.m in Sources */,
 				1CD8F9921FA3617100B96F8E /* RegistrationStyle1ViewController.m in Sources */,
 				1CD8F9951FA361CE00B96F8E /* TextWithLabelCell.m in Sources */,
@@ -380,11 +380,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danish.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -393,11 +395,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danish.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RegistrationManager : NSObject
+@interface RegistrationViewModel : NSObject
 
 + (NSArray*)getRegistrationUIDetails;
 
