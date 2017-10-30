@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1270731FA6FD3A00B8D281 /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1270721FA6FD3A00B8D281 /* Animation.m */; };
 		1C1593971FA6241C00E4771E /* RegistrationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1593961FA6241C00E4771E /* RegistrationViewModel.m */; };
 		1C15939A1FA6261300E4771E /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1593991FA6261300E4771E /* IndexViewController.m */; };
 		1CD8F97F1FA350E900B96F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8F9791FA350E900B96F8E /* AppDelegate.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1270711FA6FD3A00B8D281 /* Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Animation.h; path = Utilities/Classes/Utility/Animation.h; sourceTree = SOURCE_ROOT; };
+		1C1270721FA6FD3A00B8D281 /* Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Animation.m; path = Utilities/Classes/Utility/Animation.m; sourceTree = SOURCE_ROOT; };
 		1C1593951FA6241C00E4771E /* RegistrationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewModel.h; sourceTree = "<group>"; };
 		1C1593961FA6241C00E4771E /* RegistrationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewModel.m; sourceTree = "<group>"; };
 		1C1593981FA6261300E4771E /* IndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
@@ -53,9 +56,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C1270701FA6FCC000B8D281 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1C1270711FA6FD3A00B8D281 /* Animation.h */,
+				1C1270721FA6FD3A00B8D281 /* Animation.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		1CD8F9761FA350E900B96F8E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1C1270701FA6FCC000B8D281 /* Utility */,
 				1CD8F9771FA350E900B96F8E /* AppDelegate */,
 				1CD8F97A1FA350E900B96F8E /* Model */,
 				1CD8F97B1FA350E900B96F8E /* View */,
@@ -252,6 +265,7 @@
 				1C1593971FA6241C00E4771E /* RegistrationViewModel.m in Sources */,
 				1CDD46061FA0B12800D29679 /* main.m in Sources */,
 				1CD8F9921FA3617100B96F8E /* RegistrationStyle1ViewController.m in Sources */,
+				1C1270731FA6FD3A00B8D281 /* Animation.m in Sources */,
 				1CD8F9951FA361CE00B96F8E /* TextWithLabelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

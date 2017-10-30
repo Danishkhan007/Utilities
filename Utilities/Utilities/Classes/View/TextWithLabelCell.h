@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TextfieldDelegate <NSObject>
+
+@optional
+- (void)didSelectTextField:(UITextField*)textfield;
+
+@end
+
 @interface TextWithLabelCell : UITableViewCell
+
+@property (nonatomic, assign)id <TextfieldDelegate> delegate;
 
 - (void)setTextLabelWithDic:(NSDictionary*)dictionary;
 
