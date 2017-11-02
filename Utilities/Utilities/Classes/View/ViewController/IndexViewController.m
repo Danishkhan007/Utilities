@@ -28,6 +28,11 @@
     [self performSegueWithIdentifier:@"ShowRegistration" sender:nil];
 }
 
+- (IBAction)loginBtnPressed:(id)sender {
+    [self performSegueWithIdentifier:@"ShowLogin" sender:nil];
+}
+
+
 
 
 @end

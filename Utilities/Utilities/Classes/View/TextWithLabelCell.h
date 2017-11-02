@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class TextWithLabelCell;
 @protocol TextfieldDelegate <NSObject>
 
 @optional

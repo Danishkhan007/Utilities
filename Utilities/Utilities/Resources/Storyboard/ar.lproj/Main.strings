@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0mf-Gv-rH7"; */
+"0mf-Gv-rH7.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Enter username"; ObjectID = "Czt-NX-A7A"; */
+"Czt-NX-A7A.placeholder" = "Enter username";
+
+/* Class = "UINavigationItem"; title = "REGISTRATION"; ObjectID = "D75-yY-bj0"; */
+"D75-yY-bj0.title" = "REGISTRATION";
+
+/* Class = "UIBarButtonItem"; title = "  "; ObjectID = "D8v-Rf-47a"; */
+"D8v-Rf-47a.title" = "  ";
+
+/* Class = "UIButton"; normalTitle = "Registration"; ObjectID = "DWh-HH-Bqh"; */
+"DWh-HH-Bqh.normalTitle" = "Registration";
+
+/* Class = "UIBarButtonItem"; title = "  "; ObjectID = "JCM-0a-L18"; */
+"JCM-0a-L18.title" = "  ";
+
+/* Class = "UITextField"; placeholder = "Enter password"; ObjectID = "aYR-eG-Tk8"; */
+"aYR-eG-Tk8.placeholder" = "Enter password";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "uwd-dA-IWp"; */
+"uwd-dA-IWp.normalTitle" = "Log In";
+
+/* Class = "UINavigationItem"; title = "INDEX"; ObjectID = "yKf-kQ-L5g"; */
+"yKf-kQ-L5g.title" = "INDEX";

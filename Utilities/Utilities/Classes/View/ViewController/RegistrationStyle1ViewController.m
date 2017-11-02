@@ -12,8 +12,8 @@
 #import "Animation.h"
 
 @interface RegistrationStyle1ViewController () <UITableViewDelegate, TextfieldDelegate> {
-    __weak IBOutlet UITableView* _tableview;
-    __weak UITextField* _currentTextField;
+     IBOutlet UITableView* _tableview;
+     UITextField* _currentTextField;
     
     NSArray* _uiDetailsArray;
 }
@@ -26,7 +26,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _uiDetailsArray = [RegistrationViewModel getRegistrationUIDetails];
-    
     
 }
 
@@ -41,7 +40,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -54,6 +52,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TextWithLabelCell* cell = [_tableview dequeueReusableCellWithIdentifier:@"TextLabelCell"];
     [cell setTextLabelWithDic:_uiDetailsArray[indexPath.row]];
+    cell.delegate = self;
     return cell;
 }
 

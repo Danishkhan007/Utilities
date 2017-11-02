@@ -15,9 +15,8 @@
 + (void)scrollCellUpTextfield:(UITextField*)textfield ofTable:(UITableView*)tableview {
     CGPoint pointInTable = [textfield.superview convertPoint:textfield.frame.origin toView:tableview];
     CGPoint contentOffset = tableview.contentOffset;
-
-    contentOffset.y = (pointInTable.y - tableview.inputAccessoryView.frame.size.height);
-
+    
+    contentOffset.y = (pointInTable.y - textfield.inputAccessoryView.frame.size.height);
     [tableview setContentOffset:contentOffset animated:YES];
 }
 
@@ -27,7 +26,7 @@
     {
         UITableViewCell *cell = (UITableViewCell*)textfield.superview.superview;
         NSIndexPath *indexPath = [tableview indexPathForCell:cell];
-
+        
         [tableview scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:TRUE];
     }
 }
