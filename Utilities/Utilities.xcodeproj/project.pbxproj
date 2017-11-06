@@ -13,6 +13,9 @@
 		1C2BCC821FAB020E00FFBB38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BCC801FAB020E00FFBB38 /* InfoPlist.strings */; };
 		1C2BCC8E1FAB23AE00FFBB38 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2BCC8D1FAB23AE00FFBB38 /* DataManager.m */; };
 		1C2BCC941FAB2A7600FFBB38 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2BCC931FAB2A7600FFBB38 /* LoginViewModel.m */; };
+		1C512FA71FB040C9008E4475 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C512FA61FB040C9008E4475 /* DashboardViewController.m */; };
+		1C512FAA1FB043B9008E4475 /* DashboardCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C512FA91FB043B9008E4475 /* DashboardCollectionCell.m */; };
+		1C512FB41FB053CE008E4475 /* UIColor+UIColor_ThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C512FB31FB053CE008E4475 /* UIColor+UIColor_ThemeColor.m */; };
 		1CD8F97F1FA350E900B96F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8F9791FA350E900B96F8E /* AppDelegate.m */; };
 		1CD8F9891FA350F500B96F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8F9831FA350F500B96F8E /* Assets.xcassets */; };
 		1CD8F98A1FA350F500B96F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8F9851FA350F500B96F8E /* LaunchScreen.storyboard */; };
@@ -40,6 +43,12 @@
 		1C2BCC8D1FAB23AE00FFBB38 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		1C2BCC921FAB2A7600FFBB38 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		1C2BCC931FAB2A7600FFBB38 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		1C512FA51FB040C9008E4475 /* DashboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		1C512FA61FB040C9008E4475 /* DashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		1C512FA81FB043B9008E4475 /* DashboardCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardCollectionCell.h; sourceTree = "<group>"; };
+		1C512FA91FB043B9008E4475 /* DashboardCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardCollectionCell.m; sourceTree = "<group>"; };
+		1C512FB21FB053CE008E4475 /* UIColor+UIColor_ThemeColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_ThemeColor.h"; sourceTree = "<group>"; };
+		1C512FB31FB053CE008E4475 /* UIColor+UIColor_ThemeColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_ThemeColor.m"; sourceTree = "<group>"; };
 		1CD8F9781FA350E900B96F8E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CD8F9791FA350E900B96F8E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1CD8F9831FA350F500B96F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +91,8 @@
 				1C1270721FA6FD3A00B8D281 /* Animation.m */,
 				1C2BCC8C1FAB23AE00FFBB38 /* DataManager.h */,
 				1C2BCC8D1FAB23AE00FFBB38 /* DataManager.m */,
+				1C512FB21FB053CE008E4475 /* UIColor+UIColor_ThemeColor.h */,
+				1C512FB31FB053CE008E4475 /* UIColor+UIColor_ThemeColor.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -122,6 +133,8 @@
 				1CD8F98F1FA3617100B96F8E /* ViewController */,
 				1CD8F9931FA361CE00B96F8E /* TextWithLabelCell.h */,
 				1CD8F9941FA361CE00B96F8E /* TextWithLabelCell.m */,
+				1C512FA81FB043B9008E4475 /* DashboardCollectionCell.h */,
+				1C512FA91FB043B9008E4475 /* DashboardCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +187,8 @@
 				1C1593991FA6261300E4771E /* IndexViewController.m */,
 				1CF099981FA9D11D003B62FF /* LoginViewController.h */,
 				1CF099991FA9D11D003B62FF /* LoginViewController.m */,
+				1C512FA51FB040C9008E4475 /* DashboardViewController.h */,
+				1C512FA61FB040C9008E4475 /* DashboardViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -300,12 +315,15 @@
 				1CD8F99B1FA5A64B00B96F8E /* RegistrationModel.m in Sources */,
 				1C15939A1FA6261300E4771E /* IndexViewController.m in Sources */,
 				1C2BCC941FAB2A7600FFBB38 /* LoginViewModel.m in Sources */,
+				1C512FB41FB053CE008E4475 /* UIColor+UIColor_ThemeColor.m in Sources */,
 				1CD8F97F1FA350E900B96F8E /* AppDelegate.m in Sources */,
 				1C2BCC8E1FAB23AE00FFBB38 /* DataManager.m in Sources */,
 				1C1593971FA6241C00E4771E /* RegistrationViewModel.m in Sources */,
 				1CDD46061FA0B12800D29679 /* main.m in Sources */,
+				1C512FA71FB040C9008E4475 /* DashboardViewController.m in Sources */,
 				1CF0999A1FA9D11D003B62FF /* LoginViewController.m in Sources */,
 				1CD8F9921FA3617100B96F8E /* RegistrationStyle1ViewController.m in Sources */,
+				1C512FAA1FB043B9008E4475 /* DashboardCollectionCell.m in Sources */,
 				1C1270731FA6FD3A00B8D281 /* Animation.m in Sources */,
 				1CD8F9951FA361CE00B96F8E /* TextWithLabelCell.m in Sources */,
 			);

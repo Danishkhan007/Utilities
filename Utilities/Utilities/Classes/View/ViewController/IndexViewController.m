@@ -32,7 +32,4 @@
     [self performSegueWithIdentifier:@"ShowLogin" sender:nil];
 }
 
-
-
-
 @end
