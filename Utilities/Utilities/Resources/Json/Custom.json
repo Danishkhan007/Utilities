@@ -49,5 +49,14 @@
                      "placeholder"  :"Enter your pin code.",
                      "index"        :"110"
                      }
+    ],
+    "login":    [{
+                 "placeholder"   :"Enter user name",
+                 "index"         :"111"
+                 },
+                 {
+                 "placeholder"   :"Enter password",
+                 "index"         :"112"
+                 }
     ]
 }

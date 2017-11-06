@@ -10,6 +10,6 @@
 
 @interface RegistrationViewModel : NSObject
 
-+ (NSArray*)getRegistrationUIDetails;
++ (NSArray*)getRegistrationJson;
 
 @end

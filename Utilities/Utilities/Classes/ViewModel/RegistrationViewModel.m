@@ -7,21 +7,13 @@
 //
 
 #import "RegistrationViewModel.h"
+#import "DataManager.h"
 
 @implementation RegistrationViewModel
 
 //To fetch display data from json file. 
-+ (NSArray*)getRegistrationUIDetails {
-    NSArray* itemsArray;
-    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"Registration" ofType:@"json"];
-    NSData* fileData = [NSData dataWithContentsOfFile:filePath];
-    
-    if (fileData) {
-        NSDictionary* jsonObj = [NSJSONSerialization
-                                 JSONObjectWithData:fileData options:kNilOptions error:nil];
-        itemsArray = jsonObj[@"registration"];
-    }
-    return itemsArray;
++ (NSArray*)getRegistrationJson {
+  return  [DataManager getArrayforJsonName:@"registration"];
 }
 
 @end

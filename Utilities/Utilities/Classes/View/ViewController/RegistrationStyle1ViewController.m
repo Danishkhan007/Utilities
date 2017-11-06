@@ -25,7 +25,7 @@
 #pragma mark: View Methods
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _uiDetailsArray = [RegistrationViewModel getRegistrationUIDetails];
+    _uiDetailsArray = [RegistrationViewModel getRegistrationJson];
     
 }
 

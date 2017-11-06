@@ -19,8 +19,11 @@
 
 - (void)setTextLabelWithDic:(NSDictionary*)dictionary {
     _label.text = [dictionary objectForKey:@"label"];
-    
+    _textfield.tag = [[dictionary objectForKey:@"index"] intValue];
     _textfield.attributedPlaceholder = [[NSAttributedString alloc] initWithString:[dictionary objectForKey:@"placeholder"] attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor] }];
+
+    _textfield.secureTextEntry = (_textfield.tag == EPassword) ? YES : NO;
+ 
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
