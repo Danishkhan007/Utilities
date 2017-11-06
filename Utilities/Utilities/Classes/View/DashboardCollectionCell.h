@@ -17,4 +17,6 @@ typedef enum NSInteger {
     EGrid4Color
 } EGridColor;
 
+- (void)setGridUIAtIndex:(NSIndexPath*)indexpath;
+
 @end

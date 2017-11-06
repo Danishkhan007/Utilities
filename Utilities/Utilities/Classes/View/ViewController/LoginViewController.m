@@ -68,4 +68,9 @@
 - (void)didSelectTextField:(UITextField *)textfield {
     _currentTextField = textfield;
 }
+
+- (IBAction)doneBtnPressed:(id)sender {
+    [self performSegueWithIdentifier:@"showDashboard" sender:nil];
+}
+
 @end

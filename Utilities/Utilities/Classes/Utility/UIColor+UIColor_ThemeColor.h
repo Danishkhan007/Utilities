@@ -14,5 +14,6 @@
 + (UIColor*)grid2Color;
 + (UIColor*)grid3Color;
 + (UIColor*)grid4Color;
++ (UIColor*)randomGridColorForIndex:(NSInteger)index;
 
 @end

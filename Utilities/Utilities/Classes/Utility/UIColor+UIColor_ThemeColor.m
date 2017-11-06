@@ -26,4 +26,18 @@
     return [UIColor colorWithRed:(253.0/255.0) green:(230.0/255.0) blue:(6.0/255.0) alpha:1.0];
 }
 
++ (UIColor*)randomGridColorForIndex:(NSInteger)index {
+    Float32 red  = index*3;
+    Float32 blue = index*4;
+    Float32 green = index*5;
+    if (red > 255.0)
+        red = (red - 255.0);
+    if (green > 255.0)
+        green = (green - 255.0);
+    if (blue > 255.0)
+        blue = (blue - 255.0);
+    
+    return [UIColor colorWithRed:(red/255.0) green:(green/255.0) blue:(blue/255.0) alpha:1];
+}
+
 @end

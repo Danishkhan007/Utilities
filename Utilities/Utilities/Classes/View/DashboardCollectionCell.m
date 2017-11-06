@@ -39,7 +39,7 @@
             break;
         }
         default: {
-            break;
+            gridColor = [UIColor randomGridColorForIndex:index];
         }
     }
     return gridColor;
