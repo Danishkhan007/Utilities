@@ -7,3 +7,8 @@
 *.xcuserstate
 *.xcuserstate
 *.xcuserstate
+Utilities/Utilities/Classes/.DS_Store
+Utilities/Utilities/Resources/.DS_Store
+*.xcscheme
+*.xcbkptlist
+*.xcuserstate
